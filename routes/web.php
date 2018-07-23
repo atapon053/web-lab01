@@ -11,7 +11,11 @@
 |
 */
 
-Route::get('/', [
+Route::get('/', function () {
+    return view('index');
+});
+
+Route::get('/test-relation', [
     'as' => 'home',
     'uses' => 'TestRelationController@index'
 ]);

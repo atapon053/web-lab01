@@ -64,11 +64,11 @@
                             <option value="{!! $locale !!}" {!! request()->get('local') == $locale ? 'selected' : '' !!}>{!! $locale !!}</option>
                         @endforeach
                     </select>
-                    {{--<select name="local" id="local" class="form-control">--}}
-                        {{--<option value="">--Select--</option>--}}
-                        {{--<option value="th" name="th" {!! $get_lang == 'th' ? "selected" : '' !!}>Thai</option>--}}
-                        {{--<option value="en" name="en" {!! $get_lang == 'en' ? "selected" : '' !!}>English</option>--}}
-                    {{--</select>--}}
+                    <select name="local" id="local" class="form-control">
+                        <option value="">--Select--</option>
+                        <option value="th" name="th" {!! $get_lang == 'th' ? "selected" : '' !!}>Thai</option>
+                        <option value="en" name="en" {!! $get_lang == 'en' ? "selected" : '' !!}>English</option>
+                    </select>
                 </div>
             </form>
         </div>

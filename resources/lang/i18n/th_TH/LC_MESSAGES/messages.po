@@ -1,0 +1,31 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MultilanguageLaravelApplication\n"
+"POT-Creation-Date: 2018-07-17 17:13+0700\n"
+"PO-Revision-Date: 2018-07-17 17:13+0700\n"
+"Last-Translator: James Translator <james@translations.colm>\n"
+"Language-Team: James Translator <james@translations.colm>\n"
+"Language: th_TH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.9\n"
+"X-Poedit-KeywordsList: _;__;_i;_s;gettext;_n:1,2;ngettext:1,2;dgettext:2\n"
+"X-Poedit-Basepath: ../../../../../app\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: Http\n"
+"X-Poedit-SearchPath-1: ../resources/views\n"
+"X-Poedit-SearchPath-2: Console\n"
+"X-Poedit-SearchPath-3: ../storage/framework/messages\n"
+"X-Poedit-SearchPath-4: ../resources/views/vendor\n"
+
+#: ../storage/framework/messages/390d924f89bc92fdb8f4b01fd9d53937ba0c1278.php.php:17
+msgid "Hello"
+msgstr "สวัสดี"
+
+#: ../storage/framework/messages/8abf68c1b6ed8d0d8335ad82487ee4e669b17b20.php.php:42
+msgid "home.submit"
+msgstr "บันทึก"
+
+#~ msgid "Hi"
+#~ msgstr "สวัสดี"

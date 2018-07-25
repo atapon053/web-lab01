@@ -35,14 +35,14 @@ class CategoryCrudController extends CrudController
         // ------ CRUD COLUMNS
         $this->crud->addColumn([
                                 'name' => 'name',
-                                'label' => 'Name',
+                                'label' => _i('Name'),
                             ]);
         $this->crud->addColumn([
                                 'name' => 'slug',
-                                'label' => 'Slug',
+                                'label' => _i('Slug'),
                             ]);
         $this->crud->addColumn([
-                                'label' => 'Parent',
+                                'label' => _i('Parent'),
                                 'type' => 'select',
                                 'name' => 'parent_id',
                                 'entity' => 'parent',

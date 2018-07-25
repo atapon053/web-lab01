@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: MultilanguageLaravelApplication\n"
-"POT-Creation-Date: 2018-07-25 15:26+0700\n"
-"PO-Revision-Date: 2018-07-25 15:29+0700\n"
+"POT-Creation-Date: 2018-07-25 17:58+0700\n"
+"PO-Revision-Date: 2018-07-25 17:59+0700\n"
 "Last-Translator: James Translator <james@translations.colm>\n"
 "Language-Team: James Translator <james@translations.colm>\n"
 "Language: th\n"
@@ -43,37 +43,62 @@ msgstr "สถานะการเข้าสู่ระบบ"
 msgid "You are logged in!"
 msgstr "อยู่ในระบบ"
 
+#: ../storage/framework/messages/01465c580f64ab818351af98df802b64b8a1d5f5.php.php:5
+#: ../storage/framework/messages/048f1478f9f403ac3696a4f68c68964e3ca51d76.php.php:5
+#: ../storage/framework/views/048f1478f9f403ac3696a4f68c68964e3ca51d76.php:5
+msgid "All"
+msgstr "ทั้งหมด"
+
+#: ../storage/framework/messages/01465c580f64ab818351af98df802b64b8a1d5f5.php.php:5
+#: ../storage/framework/messages/048f1478f9f403ac3696a4f68c68964e3ca51d76.php.php:5
+#: ../storage/framework/views/048f1478f9f403ac3696a4f68c68964e3ca51d76.php:5
+msgid "in data base"
+msgstr "ในฐานข้อมูล"
+
 #: ../storage/framework/messages/0e27846ab3ef568226360382716c801749ca0ef4.php.php:32
 #: ../storage/framework/messages/8eb285dbb8b62d97dd55b4ee98e9e6f38a2a4a5c.php.php:32
+#: ../storage/framework/views/54c4c1c548d95eec7314d7fa67c9c516c3cd71f6.php:33
 #: ../storage/framework/views/df0f1f6c8f04398e9fe91e8c222c0a80cbefb1ba.php:32
 msgid "Login"
-msgstr ""
+msgstr "เข้าสู่ระบบ"
 
 #: ../storage/framework/messages/390d924f89bc92fdb8f4b01fd9d53937ba0c1278.php.php:17
 #: ../storage/framework/messages/d905c70bea01d282ca73cf2b94108067c7167b92.php.php:17
 #: ../storage/framework/views/390d924f89bc92fdb8f4b01fd9d53937ba0c1278.php:17
 msgid "Hello"
-msgstr ""
+msgstr "สวัสดี"
 
 #: ../storage/framework/messages/7a22fa4f03d20b98a4c6a6dac434a0fadcdffb48.php.php:42
 #: ../storage/framework/messages/8abf68c1b6ed8d0d8335ad82487ee4e669b17b20.php.php:42
 #: ../storage/framework/views/8abf68c1b6ed8d0d8335ad82487ee4e669b17b20.php:42
 msgid "Submit"
-msgstr ""
+msgstr "บันทึก"
+
+#: ../storage/framework/messages/8eb285dbb8b62d97dd55b4ee98e9e6f38a2a4a5c.php.php:34
+#: ../storage/framework/views/54c4c1c548d95eec7314d7fa67c9c516c3cd71f6.php:35
+msgid "Register"
+msgstr "ลงทะเบียน"
+
+#: ../storage/framework/messages/8eb285dbb8b62d97dd55b4ee98e9e6f38a2a4a5c.php.php:37
+#: ../storage/framework/views/54c4c1c548d95eec7314d7fa67c9c516c3cd71f6.php:40
+msgid "Logout"
+msgstr "ออกจากระบบ"
 
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:31
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:57
 #: Http/Controllers/Admin/ProfileController.php:31
 #: Http/Controllers/Admin/ProfileController.php:57
 msgid "User"
-msgstr ""
+msgstr "ผู้ใช้"
 
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:40
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:73
+#: ../storage/framework/messages/f87b5d0d21f9b84256afa8949bd108c57e5f6732.php.php:38
+#: Http/Controllers/Admin/CategoryCrudController.php:38
 #: Http/Controllers/Admin/ProfileController.php:40
 #: Http/Controllers/Admin/ProfileController.php:73
 msgid "Name"
-msgstr ""
+msgstr "ชื่อ"
 
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:44
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:80
@@ -82,33 +107,43 @@ msgstr ""
 #: Http/Controllers/Admin/ProfileController.php:80
 #: Http/Controllers/Admin/ProfileController.php:86
 msgid "Birthday"
-msgstr ""
+msgstr "วันเกิด"
 
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:48
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:92
 #: Http/Controllers/Admin/ProfileController.php:48
 #: Http/Controllers/Admin/ProfileController.php:92
 msgid "Age"
-msgstr ""
+msgstr "อายุ"
 
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:52
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:98
 #: Http/Controllers/Admin/ProfileController.php:52
 #: Http/Controllers/Admin/ProfileController.php:98
 msgid "Address"
-msgstr ""
+msgstr "ที่อยู่"
 
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:67
 #: Http/Controllers/Admin/ProfileController.php:67
 msgid "Image"
-msgstr ""
+msgstr "รูปภาพ"
 
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:75
 #: Http/Controllers/Admin/ProfileController.php:75
 msgid "You full name"
-msgstr ""
+msgstr "ชื่อเต็ม"
 
 #: ../storage/framework/messages/9cee0f0743ab9635b481249066176449d4470069.php.php:103
 #: Http/Controllers/Admin/ProfileController.php:103
 msgid "Special Interest"
-msgstr ""
+msgstr "ดอกเบี้ยพิเศษ"
+
+#: ../storage/framework/messages/f87b5d0d21f9b84256afa8949bd108c57e5f6732.php.php:42
+#: Http/Controllers/Admin/CategoryCrudController.php:42
+msgid "Slug"
+msgstr "ชื่อเฉพาะ"
+
+#: ../storage/framework/messages/f87b5d0d21f9b84256afa8949bd108c57e5f6732.php.php:45
+#: Http/Controllers/Admin/CategoryCrudController.php:45
+msgid "Parent"
+msgstr "บรรพบุรุษ"

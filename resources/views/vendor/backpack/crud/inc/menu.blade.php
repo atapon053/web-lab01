@@ -31,10 +31,10 @@
         @if (backpack_auth()->guest())
             <li><a href="{{ url(config('backpack.base.route_prefix', 'admin').'/login') }}">{{ _i('Login') }}</a></li>
             @if (config('backpack.base.registration_open'))
-            <li><a href="{{ route('backpack.auth.register') }}">{{ trans('backpack::base.register') }}</a></li>
+            <li><a href="{{ route('backpack.auth.register') }}">{{ _i('Register') }}</a></li>
             @endif
         @else
-            <li><a href="{{ route('backpack.auth.logout') }}"><i class="fa fa-btn fa-sign-out"></i> {{ trans('backpack::base.logout') }}</a></li>
+            <li><a href="{{ route('backpack.auth.logout') }}"><i class="fa fa-btn fa-sign-out"></i> {{ _i('Logout') }}</a></li>
         @endif
        @endif
        <!-- ========== End of top menu right items ========== -->

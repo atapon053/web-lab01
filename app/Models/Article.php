@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Backpack\CRUD\CrudTrait;
+use Backpack\CRUD\ModelTraits\SpatieTranslatable\HasTranslations;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
@@ -11,6 +12,7 @@ class Article extends Model
 {
     use CrudTrait;
     use Sluggable, SluggableScopeHelpers;
+    use HasTranslations;
 
     /*
     |--------------------------------------------------------------------------
@@ -29,6 +31,8 @@ class Article extends Model
         'featured'  => 'boolean',
         'date'      => 'date',
     ];
+
+    protected $translatable = ['slug', 'title', 'content'];
 
     /**
      * Return the sluggable configuration array for this model.
@@ -58,12 +62,12 @@ class Article extends Model
 
     public function category()
     {
-        return $this->belongsTo('Backpack\NewsCRUD\app\Models\Category', 'category_id');
+        return $this->belongsTo('App\Models\Category', 'category_id');
     }
 
     public function tags()
     {
-        return $this->belongsToMany('Backpack\NewsCRUD\app\Models\Tag', 'article_tag');
+        return $this->belongsToMany('App\Models\Tag', 'article_tag');
     }
 
     /*

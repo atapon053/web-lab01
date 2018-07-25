@@ -6,7 +6,9 @@
     "type": "project",
     "require": {
         "php": "^7.1.3",
+        "Belphemur/laravel-gettext": "6.x",
         "backpack/crud": "^3.4",
+        "backpack/langfilemanager": "^1.0",
         "backpack/permissionmanager": "^2.1",
         "barryvdh/laravel-elfinder": "^0.3.12",
         "cviebrock/eloquent-sluggable": "^4.5",
@@ -18,8 +20,8 @@
         "laravel/framework": "5.6.*",
         "laravel/tinker": "^1.0",
         "predis/predis": "^1.1",
-        "yajra/laravel-datatables-oracle": "^8.7",
-        "Belphemur/laravel-gettext": "6.x"
+        "spatie/laravel-translatable": "^2.2",
+        "yajra/laravel-datatables-oracle": "^8.7"
     },
     "require-dev": {
         "backpack/generators": "^1.1",
@@ -31,6 +33,9 @@
         "phpunit/phpunit": "^7.0"
     },
     "autoload": {
+        "files": [
+            "app/Libraries/helpers.php"
+        ],
         "classmap": [
             "database/seeds",
             "database/factories"

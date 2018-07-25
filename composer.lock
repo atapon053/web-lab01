@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7b527014f608425a270133a13ede2c3",
+    "content-hash": "a4dd6f9a4e7b3142f9609189e9803636",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -186,6 +186,82 @@
                 "update"
             ],
             "time": "2018-07-17T16:11:10+00:00"
+        },
+        {
+            "name": "backpack/langfilemanager",
+            "version": "1.0.25",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Laravel-Backpack/LangFileManager.git",
+                "reference": "9923207c184ac4c2ba9c4b49290eb1e87c9e981e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Laravel-Backpack/LangFileManager/zipball/9923207c184ac4c2ba9c4b49290eb1e87c9e981e",
+                "reference": "9923207c184ac4c2ba9c4b49290eb1e87c9e981e",
+                "shasum": ""
+            },
+            "require": {
+                "backpack/crud": "^3.0.6",
+                "illuminate/support": "~5.1",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.*",
+                "scrutinizer/ocular": "~1.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Backpack\\LangFileManager\\LangFileManagerServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Backpack\\LangFileManager\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alin Ghitu",
+                    "email": "alin@updivision.com",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Cristian Tabacitu",
+                    "email": "hello@tabacitu.ro",
+                    "homepage": "http://www.tabacitu.ro",
+                    "role": "Contributor"
+                }
+            ],
+            "description": "An interface to edit language files, for Laravel Backpack.",
+            "homepage": "https://github.com/laravel-backpack/langfilemanager",
+            "keywords": [
+                "admin panel",
+                "backpack",
+                "dick",
+                "dick admin",
+                "dick translationmanager",
+                "dickadmin",
+                "lang file manager",
+                "lang files",
+                "language",
+                "laravel",
+                "laravel backpack",
+                "tabacitu",
+                "translationmanager",
+                "updivision"
+            ],
+            "time": "2018-03-05T12:30:19+00:00"
         },
         {
             "name": "backpack/permissionmanager",
@@ -3221,6 +3297,79 @@
                 "spatie"
             ],
             "time": "2018-02-07T16:54:07+00:00"
+        },
+        {
+            "name": "spatie/laravel-translatable",
+            "version": "2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-translatable.git",
+                "reference": "7137981ce04f679d838d99781f39802198128650"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-translatable/zipball/7137981ce04f679d838d99781f39802198128650",
+                "reference": "7137981ce04f679d838d99781f39802198128650",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "~5.5.0|~5.6.0",
+                "illuminate/support": "~5.5.0|~5.6.0",
+                "php": "^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "~3.5.0|~3.6.0",
+                "phpunit/phpunit": "^6.3|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Translatable\\TranslatableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Translatable\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sebastian De Deyne",
+                    "email": "sebastian@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://spatie.be",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Mohamed Said",
+                    "email": "theMohamedSaid@gmail.com",
+                    "role": "Original idea"
+                }
+            ],
+            "description": "A trait to make an Eloquent model hold translations",
+            "homepage": "https://github.com/spatie/laravel-translatable",
+            "keywords": [
+                "eloquent",
+                "i8n",
+                "laravel-translatable",
+                "model",
+                "multilingual",
+                "spatie",
+                "translate"
+            ],
+            "time": "2018-03-10T00:12:53+00:00"
         },
         {
             "name": "studio-42/elfinder",

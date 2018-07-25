@@ -22,4 +22,10 @@ Route::group([
         Route::get('dashboard', 'AdminController@dashboard')->name('backpack.dashboard');
         Route::get('/', 'AdminController@redirect')->name('backpack');
     }
+
+    // Language
+    Route::get('language/texts/{lang?}/{file?}', 'LanguageCrudController@showTexts');
+    Route::post('language/texts/{lang}/{file}', 'LanguageCrudController@updateTexts');
+    CRUD::resource('language', 'LanguageCrudController');
+
 }); // this should be the absolute last line of this file

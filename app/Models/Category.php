@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Backpack\CRUD\CrudTrait;
+use Backpack\CRUD\ModelTraits\SpatieTranslatable\HasTranslations;
 use Illuminate\Database\Eloquent\Model;
 use Cviebrock\EloquentSluggable\Sluggable;
 use Cviebrock\EloquentSluggable\SluggableScopeHelpers;
@@ -11,6 +12,7 @@ class Category extends Model
 {
     use CrudTrait;
     use Sluggable, SluggableScopeHelpers;
+    use HasTranslations;
 
     /*
     |--------------------------------------------------------------------------
@@ -25,6 +27,7 @@ class Category extends Model
     protected $fillable = ['name', 'slug', 'parent_id'];
     // protected $hidden = [];
     // protected $dates = [];
+    protected $translatable = ['name', 'slug'];
 
     /**
      * Return the sluggable configuration array for this model.

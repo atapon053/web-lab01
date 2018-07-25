@@ -28,9 +28,6 @@ class AdminController extends Controller
     {
         $this->data['title'] = trans('backpack::base.dashboard'); // set the page title
 
-        Session::put('locale' ,$request->local);
-        LaravelGettext::setLocale(Session::get('locale'));
-
         return view('backpack::dashboard', $this->data);
     }
 

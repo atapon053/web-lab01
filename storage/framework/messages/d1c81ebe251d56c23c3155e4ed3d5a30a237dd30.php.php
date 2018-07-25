@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\TestRelation;
+use App\Repositories\Repository;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
@@ -12,14 +13,20 @@ use Xinax\LaravelGettext\Facades\LaravelGettext;
 
 class TestRelationController extends Controller
 {
+    protected $user, $testRelation;
 
+    public function __construct(User $user, TestRelation $testRelation)
+    {
+        $this->user = new Repository($user);
+        $this->testRelation = new Repository($testRelation);
+    }
     public function index(Request $request)
     {
         $translate = $this->translate($request);
         $get_lang = Session::get('locale');
 
-        $users = User::query()->get();
-        $test_models = TestRelation::query()->with('user')->get();
+        $users = $this->user->all();
+        $test_models = $this->testRelation->with('user')->get();
 
         return view('welcome', compact('users', 'test_models', 'get_lang'));
     }
@@ -40,7 +47,6 @@ class TestRelationController extends Controller
         // $lang is 'en' or 'th'
         Session::put('locale' ,$request->local);
         LaravelGettext::setLocale(Session::get('locale'));
-        dump(LaravelGettext::getLocale());
 
 //        echo __('home.home');
     }

@@ -12,7 +12,7 @@
                     <?php echo $__env->make('crud::form_content', [ 'fields' => $crud->getFields('create'), 'action' => 'create' ], array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
                 <?php endif; ?>
 
-                <?php echo $__env->make('vendor.backpack.inc.form_save_buttons', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+                <?php echo $__env->make('vendor.backpack.crud.inc.form_save_buttons', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
             </div>
             <div class="col-sm-6">
                 One of two columns

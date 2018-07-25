@@ -12,16 +12,16 @@
 
 <div class="navbar-custom-menu">
     <ul class="nav navbar-nav">
-        <li>
-            <form action="<?php echo request()->url(); ?>" method="get">
-            <select name="local" id="local" class="form-control">
-                <option value="">--Select--</option>
-                <?php $__currentLoopData = Config::get('laravel-gettext.supported-locales'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key =>  $locale): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                    <option value="<?php echo $locale; ?>"><?php echo $locale; ?></option>
-                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-            </select>
-            </form>
-        </li>
+        
+            
+            
+                
+                
+                    
+                
+            
+            
+        
       <!-- ========================================================= -->
       <!-- ========== Top menu right items (ordered left) ========== -->
       <!-- ========================================================= -->

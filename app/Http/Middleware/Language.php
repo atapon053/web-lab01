@@ -21,19 +21,21 @@ class Language
         switch ($default_lang) {
             case ! is_null($request->locale):
                 Cookie::queue('locale', $request->locale, 3000);
-                app()->setLocale(Crypt::decrypt(Cookie::get('locale')));
+//                app()->setLocale(Crypt::decrypt(Cookie::get('locale')));
+                LaravelGettext::setLocale(Crypt::decrypt(Cookie::get('locale')));
                 break;
 
             case ! is_null(Cookie::get('locale')):
-                app()->setLocale(Crypt::decrypt(Cookie::get('locale')));
+//                app()->setLocale(Crypt::decrypt(Cookie::get('locale')));
+                LaravelGettext::setLocale(Crypt::decrypt(Cookie::get('locale')));
                 break;
 
             default:
                 Cookie::queue('locale', $default_lang->abbr, 3000);
         }
-        app()->getLocale();
+//        app()->getLocale();
 //        LaravelGettext::setLocale(Session::get('locale'));
-//        LaravelGettext::getLocale();
+        LaravelGettext::getLocale();
         return $next($request);
     }
 }

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: MultilanguageLaravelApplication\n"
 "POT-Creation-Date: 2018-07-25 15:26+0700\n"
-"PO-Revision-Date: 2018-07-25 15:26+0700\n"
+"PO-Revision-Date: 2018-07-25 15:29+0700\n"
 "Last-Translator: James Translator <james@translations.colm>\n"
 "Language-Team: James Translator <james@translations.colm>\n"
 "Language: th\n"
@@ -29,19 +29,19 @@ msgstr "หน้าควบคุม"
 #: ../storage/framework/messages/eee337ccbdafa25625d84a560b0f2dee0f3f2059.php.php:4
 #: ../storage/framework/views/0050872ed3b99c23273d6ecc891805a4934b820f.php:4
 msgid "The first page you see after login"
-msgstr ""
+msgstr "หน้าแรกที่คุณเห็นหลังจากเข้าสู่ระบบ"
 
 #: ../storage/framework/messages/0050872ed3b99c23273d6ecc891805a4934b820f.php.php:19
 #: ../storage/framework/messages/eee337ccbdafa25625d84a560b0f2dee0f3f2059.php.php:19
 #: ../storage/framework/views/0050872ed3b99c23273d6ecc891805a4934b820f.php:19
 msgid "Login status"
-msgstr ""
+msgstr "สถานะการเข้าสู่ระบบ"
 
 #: ../storage/framework/messages/0050872ed3b99c23273d6ecc891805a4934b820f.php.php:22
 #: ../storage/framework/messages/eee337ccbdafa25625d84a560b0f2dee0f3f2059.php.php:22
 #: ../storage/framework/views/0050872ed3b99c23273d6ecc891805a4934b820f.php:22
 msgid "You are logged in!"
-msgstr ""
+msgstr "อยู่ในระบบ"
 
 #: ../storage/framework/messages/0e27846ab3ef568226360382716c801749ca0ef4.php.php:32
 #: ../storage/framework/messages/8eb285dbb8b62d97dd55b4ee98e9e6f38a2a4a5c.php.php:32

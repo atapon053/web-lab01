@@ -17,22 +17,20 @@ class Language
      */
     public function handle($request, Closure $next)
     {
-        $default_lang = getLangs()->where('default', true)->first();
-        switch ($default_lang) {
-            case ! is_null($request->locale):
-                Cookie::queue('locale', $request->locale, 3000);
-//                app()->setLocale(Crypt::decrypt(Cookie::get('locale')));
-                LaravelGettext::setLocale(Crypt::decrypt(Cookie::get('locale')));
-                break;
-
-            case ! is_null(Cookie::get('locale')):
-//                app()->setLocale(Crypt::decrypt(Cookie::get('locale')));
-                LaravelGettext::setLocale(Crypt::decrypt(Cookie::get('locale')));
-                break;
-
-            default:
-                Cookie::queue('locale', $default_lang->abbr, 3000);
+        if (! is_null($request->locale)) {
+            Cookie::queue('locale', $request->locale, 3000);
         }
+
+        $selected_lang = $request->locale ?: Cookie::get('locale') ?: null;
+        if ($selected_lang) {
+            LaravelGettext::setLocale(Crypt::decrypt(Cookie::get('locale')));
+        } else {
+            $default_lang = getLangs()->where('default', true)->first();
+            if ($default_lang){
+                Cookie::queue('locale', $default_lang->abbr, 3000);
+            }
+        }
+
 //        app()->getLocale();
 //        LaravelGettext::setLocale(Session::get('locale'));
         LaravelGettext::getLocale();

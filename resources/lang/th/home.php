@@ -1,6 +1,6 @@
-<?php 
+<?php
 
- return [
-    "submit" => "ตกลง",
-    "home" => "หน้าหลัก"
+return [
+  'submit' => "Submit",
+  'home' => "Home"
 ];
